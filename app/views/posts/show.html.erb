@@ -1,0 +1,13 @@
+<div class="blog__post">
+  <h1 class="blog__post__title">
+    <%= @post.title %>
+  </h1>
+
+  <p class="blog__post__date">
+    Submitted <%= time_ago_in_words(@post.created_at) %> Ago
+  </p>
+
+  <p class="blog__post__body">
+    <%= @post.body %>
+  </p>
+</div>
